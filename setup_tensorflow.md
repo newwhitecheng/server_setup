@@ -1,5 +1,7 @@
 # After browsing through Tensorflow's installation website, I think I can improve it a little bit based on my own experience. 
 
+You can reference to [original set up scrips](https://www.tensorflow.org/install/pip) from tensorflow as site note]
+
 ## check your machine's env by
   ```
   python3 --version
