@@ -7,6 +7,39 @@ You can reference to [original set up scrips](https://www.tensorflow.org/install
   python3 --version
   ```
 
+## Install virtualenv for current user if you don't have sudo
+1. python3 -m pip install --user virtualenv
+
+### trouble shooting
+
+```
+hc218@hl279-cmp-02:~$ python3 -m pip install --user virtualenv
+Collecting virtualenv
+  Downloading https://files.pythonhosted.org/packages/8f/f1/c0b069ca6cb44f9681715232e6d3d65c75866dd231c5e4a88e80a46634bb/virtualenv-16.3.0-py2.py3-none-any.whl (2.0MB)
+    100% |████████████████████████████████| 2.0MB 16.9MB/s
+Requirement already satisfied: setuptools>=18.0.0 in ./anaconda3/lib/python3.7/site-packages (from virtualenv) (40.2.0)
+twisted 18.7.0 requires PyHamcrest>=1.9.0, which is not installed.
+Installing collected packages: virtualenv
+Successfully installed virtualenv-16.3.0
+You are using pip version 10.0.1, however version 19.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+hc218@hl279-cmp-02:~$ python3 -m pip install --user PyHamcrest
+Collecting PyHamcrest
+  Downloading https://files.pythonhosted.org/packages/9a/d5/d37fd731b7d0e91afcc84577edeccf4638b4f9b82f5ffe2f8b62e2ddc609/PyHamcrest-1.9.0-py2.py3-none-any.whl (52kB)
+    100% |████████████████████████████████| 61kB 3.7MB/s
+Requirement already satisfied: six in ./anaconda3/lib/python3.7/site-packages (from PyHamcrest) (1.11.0)
+Requirement already satisfied: setuptools in ./anaconda3/lib/python3.7/site-packages (from PyHamcrest) (40.2.0)
+Installing collected packages: PyHamcrest
+Successfully installed PyHamcrest-1.9.0
+You are using pip version 10.0.1, however version 19.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+hc218@hl279-cmp-02:~$ python3 -m pip install --user virtualenv
+Requirement already satisfied: virtualenv in ./.local/lib/python3.7/site-packages (16.3.0)
+Requirement already satisfied: setuptools>=18.0.0 in ./anaconda3/lib/python3.7/site-packages (from virtualenv) (40.2.0)
+You are using pip version 10.0.1, however version 19.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+```
+
 ## Install the Python development environment on your system 
 0. tf website only said python 2 or 3 but 3.6 and 3.7 makes difference
 1. Go to https://www.python.org/
