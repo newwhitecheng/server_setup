@@ -72,7 +72,7 @@ source ./env3.6/bin/activate
 6. And to exit virtualenv later:
 
 ```
-source ./env3.6/bin/activate
+deactivate
 ```
 
 ## For Anaconda, you can install the Python development environment on your system through
