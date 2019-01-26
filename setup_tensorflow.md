@@ -17,7 +17,7 @@ conda create -n env3.6 python=3.6
 ```
 
 ### But you can also create by virtualenv
-install virtual env
+install virtualenv
 ```
 python3 -m pip install --user virtualenv
 ```
@@ -83,11 +83,11 @@ conda install python=3.6
 
 
 ## Finally we can install the TensorFlow pip package!
-For bot virtualenv and Anaconda. Install Tensorflow with cpu only by 
+For both virtualenv and Anaconda. Install Tensorflow with cpu only by 
 ```
 pip install --upgrade tensorflow
 ```
-Install Tensorflow with cpu only by 
+Install Tensorflow with gpu by 
 ```
 pip install --upgrade tensorflow-gpu
 ```
