@@ -7,9 +7,24 @@ You can reference to [original set up scrips](https://www.tensorflow.org/install
   python3 --version
   ```
 
-## Install virtualenv for current user if you don't have sudo
-1. python3 -m pip install --user virtualenv
+## Install virtual environment for current user if you don't have sudo
+You can create virtual environment by either virtualenv or anaconda 
 
+### I prefer create by Anaconda
+(I skip the installation of Ananconda here since you'll never get in trouble with that)
+```
+conda create -n env3.6 python=3.6
+```
+
+### But you can also create by virtualenv
+install virtual env
+```
+python3 -m pip install --user virtualenv
+```
+create virtual environment 
+```
+virtualenv --system-site-packages --python=python3.6 env3.6
+```
 ### trouble shooting
 
 ```
@@ -40,7 +55,7 @@ You are using pip version 10.0.1, however version 19.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 ```
 
-## Install the Python development environment on your system 
+## For virtualevn, install the Python development environment on your system 
 0. tf website only said python 2 or 3 but 3.6 and 3.7 makes difference
 1. Go to https://www.python.org/
 2. Choose the correct python version according to tensorflow build. For example python3.6
@@ -60,8 +75,20 @@ source ./env3.6/bin/activate
 source ./env3.6/bin/activate
 ```
 
+## For Anaconda, you can install the Python development environment on your system through
+
+```
+conda install python=3.6
+```
+
+
 ## Finally we can install the TensorFlow pip package!
-1. Install Tensorflow with cpu only
+For bot virtualenv and Anaconda. Install Tensorflow with cpu only by 
 ```
 pip install --upgrade tensorflow
 ```
+Install Tensorflow with cpu only by 
+```
+pip install --upgrade tensorflow-gpu
+```
+
