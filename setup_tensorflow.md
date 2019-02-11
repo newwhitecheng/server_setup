@@ -87,8 +87,13 @@ For both virtualenv and Anaconda. Install Tensorflow with cpu only by
 ```
 pip install --upgrade tensorflow
 ```
+
 Install Tensorflow with gpu by 
 ```
 pip install --upgrade tensorflow-gpu
+```
+to specify version
+```
+pip install tensorflow-gpu==1.4.1
 ```
 
