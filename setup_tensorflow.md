@@ -10,7 +10,12 @@ You can reference to [original set up scrips](https://www.tensorflow.org/install
 ## Install virtual environment for current user if you don't have sudo
 You can create virtual environment by either virtualenv or anaconda 
 
+
 ### I prefer create by Anaconda
+install
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
+```
 (I skip the installation of Ananconda here since you'll never get in trouble with that)
 ```
 conda create -n env3.6 python=3.6
